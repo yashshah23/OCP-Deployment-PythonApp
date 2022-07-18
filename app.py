@@ -14,7 +14,4 @@ def hello():
 
 if __name__ == "__main__":
     
-    ip = os.environ['OPENSHIFT_PYTHON_IP'] 
-    port = os.environ['OPENSHIFT_PYTHON_PORT']
-    httpd = make_server(ip, port, application)
-    #app.run(host = ip, port = port)
+    app.run(host = "0.0.0.0", port = 8080)
